@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .parent {
+            margin: 10px auto;
+            position: relative;
+            width: 600px;
+            height: 500px;
+            border: 1px solid;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            font-size: 37px;
+            text-align: center;
+            line-height: 189px;
+        }
+
+        .one {
+            background-color: red;
+            top: 56px;
+            left: 117px;
+            z-index: 2;
+        }
+
+        .two {
+            background-color: blue;
+            top: 125px;
+            left: 186px;
+        }
+
+        .three {
+            background-color: green;
+            bottom: 98px;
+            right: 145px;
+            z-index: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Service</a>
+                <ul class="dropdown">
+                    <li><a href="#">Service 1</a></li>
+                    <li><a href="#">Service 2</a></li>
+                    <li><a href="#">Service 3</a></li>
+
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="parent">
+        <div class="box one">1</div>
+        <div class="box two">2</div>
+        <div class="box three">3</div>
+    </div>
+</body>
+
+</html>

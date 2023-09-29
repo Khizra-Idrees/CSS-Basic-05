@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .shadow {
+            width: 200px;
+            height: 200px;
+            background: #808080b3;
+            margin: 20px;
+            box-shadow: 8px 7px 6px 1px rgba(0, 0, 0, 0.651);
+        }
+
+        .shadow:hover {
+            box-shadow: -8px -6px 13px 0px rgba(163, 41, 41);
+        }
+
+        button {
+            margin: 24px;
+            padding: 10px 20px;
+            color: black;
+            background-color: red;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 20px;
+            font-weight: bold;
+            border: 0px;
+            float: left;
+        }
+
+        button:hover {
+            color: white;
+            background-color: blueviolet;
+            transition: 2s;
+        }
+
+        img {
+            margin-top: 32px;
+            margin-left: 33px;
+        }
+
+        img:hover {
+            cursor: pointer;
+            border-radius: 278px;
+            transition: 1s;
+            transform: scale(1.5);
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Service</a>
+                <ul class="dropdown">
+                    <li><a href="#">Service 1</a></li>
+                    <li><a href="#">Service 2</a></li>
+                    <li><a href="#">Service 3</a></li>
+
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="shadow"></div>
+    <button>Click me</button>
+    <img src="img.png">
+</body>
+
+</html>
